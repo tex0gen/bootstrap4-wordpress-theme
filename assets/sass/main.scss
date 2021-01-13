@@ -1,48 +1,50 @@
 // Main Theme Variable Overrides
 @import "./base/_variables";
 
-// Bootstrap (Select only what you need to keep final css file minimal)
+// Bootstrap (Select only what you need)
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/root";
-@import "~bootstrap/scss/print";
-@import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/type";
-@import "~bootstrap/scss/images";
-@import "~bootstrap/scss/code";
-@import "~bootstrap/scss/grid";
-@import "~bootstrap/scss/tables";
-@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/accordion";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/button-group";
 @import "~bootstrap/scss/buttons";
-@import "~bootstrap/scss/transitions";
-// @import "~bootstrap/scss/dropdown";
-// @import "~bootstrap/scss/button-group";
-@import "~bootstrap/scss/input-group";
-// @import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/helpers";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/modal";
 @import "~bootstrap/scss/nav";
 @import "~bootstrap/scss/navbar";
-@import "~bootstrap/scss/card";
-@import "~bootstrap/scss/breadcrumb";
 @import "~bootstrap/scss/pagination";
-// @import "~bootstrap/scss/badge";
-// @import "~bootstrap/scss/jumbotron";
-@import "~bootstrap/scss/alert";
-// @import "~bootstrap/scss/progress";
-@import "~bootstrap/scss/media";
-@import "~bootstrap/scss/list-group";
-// @import "~bootstrap/scss/close";
-// @import "~bootstrap/scss/modal";
-// @import "~bootstrap/scss/tooltip";
-// @import "~bootstrap/scss/popover";
-// @import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/type";
 @import "~bootstrap/scss/utilities";
 
 // Extras
+/*! purgecss start ignore */
 @import "~swiper/swiper.scss";
+/*! purgecss end ignore */
 
 // Font Awesome 5 Pro
 /* stylelint-disable */
+/*! purgecss start ignore */
 @import "./font-awesome/scss/fontawesome";
 @import "./font-awesome/scss/animated";
 @import "./font-awesome/scss/light";
@@ -61,6 +63,7 @@
 @import "./font-awesome/scss/stacked";
 @import "./font-awesome/scss/duotone";
 @import "./font-awesome/scss/v4-shims";
+/*! purgecss end ignore */
 /* stylelint-enable */
 
 // Plugin Styles

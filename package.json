@@ -30,7 +30,7 @@
     "@wordpress/eslint-plugin": "^7.4.0",
     "autoprefixer": "^10.2.0",
     "babel-loader": "^8.2.2",
-    "bootstrap": "^4.5.3",
+    "bootstrap": "^5.0.0-beta1",
     "browser-sync": "^2.26.13",
     "browser-sync-webpack-plugin": "^2.3.0",
     "css-loader": "^5.0.1",
