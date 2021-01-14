@@ -12,21 +12,23 @@
 				}
 				?>
 			</a>
+			
+			<div class="nav">
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars"></i>
+				</button>
 
-			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<i class="fas fa-bars"></i>
-			</button>
+				<div class="collapse navbar-toggleable-xs navbar-collapse" id="navbarSupportedContent">
+					<?php
+					$args = array(
+						'theme_location' => 'main-menu',
+						'menu_class' => 'navbar-nav ml-auto',
+						'container' => false
+					);
 
-			<div class="collapse navbar-toggleable-xs navbar-collapse" id="navbarSupportedContent">
-				<?php
-				$args = array(
-					'theme_location' => 'main-menu',
-					'menu_class' => 'navbar-nav ml-auto',
-					'container' => false
-				);
-
-				wp_nav_menu( $args );
-				?>
+					wp_nav_menu( $args );
+					?>
+				</div>
 			</div>
 		</div>
 	</nav>
