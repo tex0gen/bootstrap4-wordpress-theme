@@ -1,6 +1,21 @@
+// import {
+// 	Alert,
+// 	BaseComponentbutton,
+// 	Carousel,
+// 	Collapse,
+// 	Dropdown,
+// 	Modal,
+// 	Popover,
+// 	ScrollSpy,
+// 	Tab,
+// 	Toast,
+// 	Tooltip
+// } from 'bootstrap';
 // import heightMatcher from './utilities/heightMatcher';
+/* eslint-disable */
 import Swiper, { Autoplay } from 'swiper';
-
+import StickyMenu from './components/stickyMenu';
+console.log('lol');
 Swiper.use([Autoplay]);
 
 new Swiper('.slider', {
@@ -13,60 +28,34 @@ new Swiper('.slider', {
 	},
 });
 
-// Will be working to get rid of jQuery
-jQuery(document).ready(function ($) {
-	// Sticky Menu
-	function stickyMenu(elem) {
-		const nav = $(elem);
+StickyMenu('.sticky-nav');
 
-		if (nav.length) {
-			const navTop = nav.offset().top,
-				navContainer = nav.parent(),
-				navContainerHeight = navContainer.outerHeight();
+// $(window).on('load, resize', stickyMenu('.sticky-nav'));
 
-			$(document).on('scroll', function () {
-				const scrollPos = $(document).scrollTop();
+// $('.woocommerce-review-link').on('click', function (e) {
+// 	e.preventDefault();
 
-				if (scrollPos >= navTop) {
-					nav.addClass('sticky');
-					navContainer.height(navContainerHeight);
-				} else {
-					nav.removeClass('sticky');
-					navContainer.height();
-				}
-			});
-		}
-	}
+// 	const anchorToScroll = $('.woocommerce-tabs'),
+// 		scrollToPoint = $(anchorToScroll).offset().top;
 
-	$(window).on('load, resize', stickyMenu('.sticky-nav'));
+// 	$('body').animate({
+// 		scrollTop: scrollToPoint - 60,
+// 	});
+// });
 
-	/*
-	 * Woocommerce
-	 */
-	$('.woocommerce-review-link').on('click', function (e) {
-		e.preventDefault();
+// OWL CAROUSEL REMOVED
+// /*
+//  * Carousel
+//  */
+// const oc = $('.owl-carousel');
+// const ocOptions = oc.data('carousel-options');
+// const defaults = {
+//   items: 1,
+//   loop: true,
+//   autoplay: true,
+//   autoplayHoverPause: true,
+//   checkVisible: false
+// };
 
-		const anchorToScroll = $('.woocommerce-tabs'),
-			scrollToPoint = $(anchorToScroll).offset().top;
-
-		$('body').animate({
-			scrollTop: scrollToPoint - 60,
-		});
-	});
-
-	// OWL CAROUSEL REMOVED
-	// /*
-	//  * Carousel
-	//  */
-	// const oc = $('.owl-carousel');
-	// const ocOptions = oc.data('carousel-options');
-	// const defaults = {
-	//   items: 1,
-	//   loop: true,
-	//   autoplay: true,
-	//   autoplayHoverPause: true,
-	//   checkVisible: false
-	// };
-
-	// oc.owlCarousel($.extend(defaults, ocOptions));
-});
+// oc.owlCarousel($.extend(defaults, ocOptions));
+/* eslint-enable */

@@ -96,7 +96,7 @@ module.exports = {
         /^wpcf7(.*)?$/,
       ],
       whitelist: ['pr3', 'pv2', 'ph3', 'mb1', 'input', 'tracked-mega'],
-      variables: true,
+      variables: false,
     }),
   ],
   optimization: {

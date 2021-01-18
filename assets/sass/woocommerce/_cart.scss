@@ -24,11 +24,11 @@
 		}
 
 		.button {
-			@extend .float-right, .btn-primary;
+			@extend .float-end, .btn-primary;
 		}
 
 		.coupon {
-			@extend .float-left;
+			@extend .float-end;
 
 			label {
 				display: none;
