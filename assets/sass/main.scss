@@ -40,12 +40,14 @@
 @import "~bootstrap/scss/spinners";
 
 // Extras
+
 /*! purgecss start ignore */
 @import "~swiper/swiper.scss";
+
 /*! purgecss end ignore */
 
 // Font Awesome 5 Pro
-/* stylelint-disable */
+
 /*! purgecss start ignore */
 @import "./font-awesome/scss/fontawesome";
 @import "./font-awesome/scss/animated";
@@ -65,11 +67,14 @@
 @import "./font-awesome/scss/stacked";
 @import "./font-awesome/scss/duotone";
 @import "./font-awesome/scss/v4-shims";
+
 /*! purgecss end ignore */
-/* stylelint-enable */
 
 // Plugin Styles
+
+/*! purgecss start ignore */
 @import "./woocommerce/woocommerce";
+/*! purgecss end ignore */
 
 // Base Styles
 @import "./base/base";

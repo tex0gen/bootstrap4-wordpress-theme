@@ -1,33 +1,42 @@
 .woocommerce-info {
-	@extend .alert-info, .alert;
+	@extend .alert;
+	@extend .alert-info !optional;
 	margin-bottom: $single-gutter;
 
 	.button {
-		@extend .btn-info, .float-right;
+		@extend .btn-info !optional;
+		@extend .float-right !optional;
 	}
 }
 
 .woocommerce-error {
-	@extend .alert-danger, .alert;
+	@extend .alert;
+	@extend .alert-danger !optional;
 	list-style-type: none;
 	margin-bottom: $single-gutter;
 
 	.button {
-		@extend .btn-danger, .float-right, .btn-sm;
+		@extend .btn-danger !optional;
+		@extend .float-end !optional;
+		@extend .btn-sm !optional;
 	}
 }
 
 .woocommerce-message {
-	@extend .alert-success, .alert;
+	@extend .alert;
+	@extend .alert-success !optional;
 	margin-bottom: $single-gutter;
 
 	.button {
-		@extend .btn-success, .float-right, .btn-sm;
+		@extend .btn-danger !optional;
+		@extend .float-end !optional;
+		@extend .btn-sm !optional;
 	}
 
 	&.woocommerce-info {
 		.button {
-			@extend .btn-info, .float-right;
+			@extend .btn-info !optional;
+			@extend .float-end !optional;
 		}
 	}
 }

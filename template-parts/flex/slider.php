@@ -47,7 +47,7 @@ if ($slides) {
 						?>
 						<div class="carousel-text">
 							<div class="container">
-								<div class="row align-items-center">
+								<div class="row align-self-center">
 									<div class="col-12 col-md-6<?= $textalign ?>">
 										<?php
 										if ($slide['text']) {

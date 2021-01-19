@@ -1,6 +1,6 @@
 .comment-form {
 	.comment-form-comment {
-		@extend .form-group;
+		@extend .form-group !optional;
 
 		textarea {
 			@extend .form-control;
@@ -9,14 +9,14 @@
 }
 
 .form-row {
-	@extend .form-group;
+	@extend .form-group !optional;
 	padding: 5px;
 }
 
 .woocommerce-address-fields,
 .edit-account {
 	.form-row {
-		@extend .form-group;
+		@extend .form-group !optional;
 
 		input,
 		textarea {
@@ -48,7 +48,7 @@
 	margin-bottom: $spacing-bottom;
 
 	.form-row {
-		@extend .form-group;
+		@extend .form-group !optional;
 
 		input.input-text {
 			@extend .form-control;

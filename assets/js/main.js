@@ -12,10 +12,9 @@
 // 	Tooltip
 // } from 'bootstrap';
 // import heightMatcher from './utilities/heightMatcher';
-/* eslint-disable */
+// import StickyMenu from './components/stickyMenu';
 import Swiper, { Autoplay } from 'swiper';
-import StickyMenu from './components/stickyMenu';
-console.log('lol');
+
 Swiper.use([Autoplay]);
 
 new Swiper('.slider', {
@@ -28,26 +27,7 @@ new Swiper('.slider', {
 	},
 });
 
-StickyMenu('.sticky-nav');
-
-// $(window).on('load, resize', stickyMenu('.sticky-nav'));
-
-// $('.woocommerce-review-link').on('click', function (e) {
-// 	e.preventDefault();
-
-// 	const anchorToScroll = $('.woocommerce-tabs'),
-// 		scrollToPoint = $(anchorToScroll).offset().top;
-
-// 	$('body').animate({
-// 		scrollTop: scrollToPoint - 60,
-// 	});
-// });
-
-// OWL CAROUSEL REMOVED
-// /*
-//  * Carousel
-//  */
-// const oc = $('.owl-carousel');
+// OWL CAROUSEL REMOVED => This has been kept for the options to be translated for Swiper
 // const ocOptions = oc.data('carousel-options');
 // const defaults = {
 //   items: 1,
@@ -56,6 +36,3 @@ StickyMenu('.sticky-nav');
 //   autoplayHoverPause: true,
 //   checkVisible: false
 // };
-
-// oc.owlCarousel($.extend(defaults, ocOptions));
-/* eslint-enable */

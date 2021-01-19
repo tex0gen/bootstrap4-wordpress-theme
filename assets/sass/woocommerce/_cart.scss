@@ -24,11 +24,12 @@
 		}
 
 		.button {
-			@extend .float-end, .btn-primary;
+			@extend .float-end !optional;
+			@extend .btn-primary !optional;
 		}
 
 		.coupon {
-			@extend .float-end;
+			@extend .float-end !optional;
 
 			label {
 				display: none;
@@ -63,7 +64,7 @@
 		}
 
 		.checkout-button {
-			@extend .float-right;
+			@extend .float-end !optional;
 		}
 	}
 }

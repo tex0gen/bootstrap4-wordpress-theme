@@ -13,7 +13,7 @@ form.checkout {
 			width: 100%;
 
 			.form-row {
-				@extend .form-group;
+				@extend .form-group !optional;
 
 				input,
 				textarea {
@@ -72,7 +72,7 @@ form.checkout {
 
 	.place-order {
 		.button {
-			@extend .btn-primary;
+			@extend .btn, .btn-primary;
 		}
 	}
 }
